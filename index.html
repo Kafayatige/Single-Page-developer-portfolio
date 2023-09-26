@@ -12,6 +12,7 @@
   <title>Frontend Mentor | Single-page developer portfolio</title>
 </head>
 <body >
+  <!-- Mobile-first approach -->
   <div class="portfolio-container">
     <header class="header">
       <p class="logo-name"> adamkeyes </>
@@ -33,6 +34,15 @@
 
     <main>
       <section class="hero">
+        <div class="profile-picture-src">
+          <!-- change picture with media query at specified screen-width -->
+            <picture>
+              <source media="(min-width:650px)" srcset="assets/images/image-profile-desktop.webp">
+              <source media="(min-width:465px)" srcset="assets/images/image-profile-tablet.webp">
+              <img class="profile-picture" alt="developer profile picture" src="assets/images/image-profile-mobile.webp">
+            </picture>
+        </div>
+
         <div class="hero-text">
           <h1 class="intro"> </h1>
           Nice to meet You! <br>
@@ -48,7 +58,7 @@
         </div>
         </section>
 
-        <hr>
+        <div class="horizontal-line"></div>
 
         <section class="tech-stack">
           <div class="skillset">
@@ -76,7 +86,12 @@
             <P class="years">3 Years Experience</P>
           </div>
         </section>
+
+        <div class="horizontal-line"></div>
        
+        <section class="projects">
+
+        </section>
         
     </main>
 
